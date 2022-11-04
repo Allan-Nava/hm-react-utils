@@ -1,25 +1,8 @@
 {
   "name": "hm-react-utils",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "HiWay Media React utils functions",
   "main": "./dist/index.ts",
-  "exports": {
-    "import": "./wrapper.mjs",
-    "require": "./dist/index.js",
-    "types": "./dist/index.d.ts"
-  },
-  "files": [
-    "dist/",
-    "client-dist/",
-    "wrapper.mjs",
-    "!**/*.tsbuildinfo"
-  ],
-  "directories": {
-    "doc": "docs/",
-    "example": "example/",
-    "lib": "lib/",
-    "test": "test/"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "rimraf ./dist && tsc"
