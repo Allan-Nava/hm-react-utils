@@ -1,6 +1,6 @@
 {
   "name": "hm-react-utils",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "HiWay Media React utils functions",
   "main": "./dist/index.ts",
   "exports": {
