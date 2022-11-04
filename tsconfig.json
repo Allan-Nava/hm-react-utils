@@ -10,12 +10,12 @@
     "jsx": "preserve", 
     "module": "ESNext",  
     "declaration": true,
-    "declarationDir": "types",
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "./dist",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
     "strict": false
-  }
+  },
+  "include": ["./lib/**/*"]
 }
