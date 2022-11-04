@@ -1,7 +1,7 @@
 {
   "name": "hm-react-utils",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.10",
+  "description": "HiWay Media React utils functions",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "rimraf ./dist && tsc"
