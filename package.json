@@ -1,10 +1,15 @@
 {
   "name": "hm-react-utils",
-  "version": "1.0.15",
+  "version": "1.0.22",
   "description": "HiWay Media React utils functions",
-  "main": "./dist/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run format:check && npm run compile && npm run test:types && npm run test:unit",
+    "test:types": "tsd",
     "compile": "rimraf ./dist && tsc"
   },
   "author": "Hiway Media",
