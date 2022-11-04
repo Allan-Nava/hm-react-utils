@@ -1,6 +1,6 @@
 {
   "name": "hm-react-utils",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "HiWay Media React utils functions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,8 @@
   "scripts": {
     "test": "npm run format:check && npm run compile && npm run test:types && npm run test:unit",
     "test:types": "tsd",
-    "compile": "rimraf ./dist && tsc"
+    "compile": "rimraf ./dist && tsc",
+    "prepack": "npm run compile"
   },
   "author": "Hiway Media",
   "license": "ISC",
