@@ -15,5 +15,22 @@
     "react": "^18.2.0",
     "tslib": "^2.4.1",
     "typescript": "^4.8.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allan-Nava/hm-react-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Allan-Nava/hm-react-utils/issues"
+  },
+  "contributors": [
+    {
+      "name": "Allan Nava",
+      "email": "allan.nava@hiway.media"
+    },
+    {
+      "name": "Antonio Borgese",
+      "email": "antonio.borgese@hiway.media"
+    }
+  ]
 }
