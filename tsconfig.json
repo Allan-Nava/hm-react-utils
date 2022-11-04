@@ -17,5 +17,6 @@
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
     "strict": false
-  }
+  },
+  "include": ["./lib/**/*"]
 }
