@@ -17,5 +17,9 @@
     "emitDeclarationOnly": true,
     "strict": false
   },
-  "include": ["./lib/**/*"]
+  "include": ["./lib/**/*"],
+  "exclude": [
+    "dist",
+    "node_modules",
+  ],
 }
