@@ -1,4 +1,4 @@
-import { momentCalculator } from "../../lib/utils/mathFunction";
+import { momentCalculator } from "./mathFunction";
 
 // fix replaceAll function ecma script 2020
 if (typeof String.prototype.replaceAll === "undefined") {
