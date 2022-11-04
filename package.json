@@ -23,6 +23,13 @@
   "bugs": {
     "url": "https://github.com/Allan-Nava/hm-react-utils/issues"
   },
+  "keywords": [
+    "typescript",
+    "framework",
+    "javascript",
+    "functions",
+    "utils"
+  ],
   "contributors": [
     {
       "name": "Allan Nava",
