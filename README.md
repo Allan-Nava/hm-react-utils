@@ -10,6 +10,6 @@ Hiway Media react utils contains :
 - utils functions
 
 
-### Documentation
+### Documentation
 
 Please see the documentation [here](https://allan-nava.github.io/hm-react-utils/) 
