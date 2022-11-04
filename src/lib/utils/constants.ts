@@ -1,0 +1,9 @@
+export const API_URI = `${process.env.API_URI}` ? `${process.env.API_URI}` : '';
+export const WS_URI = `${process.env.WS_URI}` ? `${process.env.WS_URI}` : '';
+export const API_EXTERNAL = `${process.env.API_EXTERNAL}` ? `${process.env.API_EXTERNAL}` : '';
+export const NODE_ENV = `${process.env.NODE_ENV}`;
+export const I18N = process.env.I18N;
+export const IMAGE_PROXY = `${process.env.IMAGE_PROXY}` ? `${process.env.IMAGE_PROXY}` : ''; // Need to be set in .env file @tonio
+export const IMAGE_ASSET_PREFIX = `${process.env.ASSET_PREFIX}` ? `${process.env.ASSET_PREFIX}/public` : '';
+export const GOOGLE_TAG = `${process.env.GOOGLE_TAG}`;
+export const KAFKA_BROKERS = process.env.KAFKA_BROKERS ? process.env.KAFKA_BROKERS : [];
