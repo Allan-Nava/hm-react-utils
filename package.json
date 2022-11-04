@@ -1,9 +1,12 @@
 {
   "name": "hm-react-utils",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "HiWay Media React utils functions",
-  "type": "commonjs",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "test": "npm run format:check && npm run compile && npm run test:types && npm run test:unit",
     "test:types": "tsd",
