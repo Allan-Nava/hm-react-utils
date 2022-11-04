@@ -1,11 +1,26 @@
 {
   "name": "hm-react-utils",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "HiWay Media React utils functions",
   "main": "./dist/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "rimraf ./dist && tsc"
+    "compile": "rimraf ./dist && tsc",
+    "format:check": "prettier --check \"lib/**/*.ts\" ",
+    "format:fix": "prettier --write \"lib/**/*.ts\" ",
+    "prepack": "npm run compile"
+  },
+  "files": [
+    "dist/",
+    "client-dist/",
+    "wrapper.mjs",
+    "!**/*.tsbuildinfo"
+  ],
+  "directories": {
+    "doc": "docs/",
+    "example": "example/",
+    "lib": "lib/",
+    "test": "test/"
   },
   "author": "Hiway Media",
   "license": "MIT",
