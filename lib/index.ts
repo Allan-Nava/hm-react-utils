@@ -5,11 +5,3 @@ export { Confluent, Consumer, Subject } from "./kafka";
 export { Page, Widget, WidgetProps } from "./models";
 export * from "./utils";
 //
-/*module.exports = {
-    Confluent,
-    Consumer,
-    Subject,
-    TranslationsProvider,
-    useTranslationContext,
-}*/
-//
