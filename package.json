@@ -1,7 +1,7 @@
 {
-  "name": "bottone",
-  "version": "0.0.2",
-  "private": true,
+  "name": "hm-react-utils",
+  "version": "1.0.23",
+  "description": "HiWay Media React utils functions",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs",
     "prepare": "npm run rollup"
