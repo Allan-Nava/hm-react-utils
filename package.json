@@ -1,55 +1,38 @@
 {
-  "name": "hm-react-utils",
-  "version": "1.0.23",
-  "description": "HiWay Media React utils functions",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "/dist"
-  ],
+  "name": "bottone",
+  "version": "0.0.2",
+  "private": true,
   "scripts": {
-    "test": "npm run format:check && npm run compile && npm run test:types && npm run test:unit",
-    "test:types": "tsd",
-    "compile": "rimraf ./dist && tsc",
-    "prepack": "npm run compile"
+    "rollup": "rollup -c --bundleConfigAsCjs",
+    "prepare": "npm run rollup"
   },
-  "author": "Hiway Media",
-  "license": "ISC",
   "devDependencies": {
-    "@types/node": "^18.11.9",
-    "@types/react": "^18.0.25",
-    "kafkajs": "^2.2.0",
-    "moment": "^2.29.3",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^9.0.2",
+    "@types/node": "17.0.31",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.3",
     "react": "^18.2.0",
-    "tslib": "^2.4.1",
-    "typescript": "^4.8.4",
-    "mocha": "^10.0.0",
-    "prettier": "^2.7.1",
-    "rimraf": "^3.0.2",
-    "tsd": "^0.21.0"
+    "react-dom": "^18.2.0",
+    "rollup": "^3.2.5",
+    "rollup-plugin-dts": "^5.0.0",
+    "typescript": "^4.8.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Allan-Nava/hm-react-utils.git"
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "bugs": {
-    "url": "https://github.com/Allan-Nava/hm-react-utils/issues"
-  },
-  "keywords": [
-    "typescript",
-    "framework",
-    "javascript",
-    "functions",
-    "utils"
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
   ],
-  "contributors": [
-    {
-      "name": "Allan Nava",
-      "email": "allan.nava@hiway.media"
-    },
-    {
-      "name": "Antonio Borgese",
-      "email": "antonio.borgese@hiway.media"
-    }
-  ]
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@rollup/plugin-json": "^5.0.1",
+    "kafkajs": "^2.2.2",
+    "moment": "^2.29.4",
+    "tslib": "^2.4.1"
+  }
 }

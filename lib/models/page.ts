@@ -14,3 +14,5 @@ export type Page = {
     context: any,
     jsonld: any
 }
+
+export default Page;

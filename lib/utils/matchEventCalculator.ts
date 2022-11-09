@@ -32,3 +32,5 @@ export const matchEventCalculator = (scores: any) => {
 
     return events
 }
+
+export default matchEventCalculator;

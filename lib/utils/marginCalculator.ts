@@ -25,3 +25,5 @@ export const marginCalculator = (scores: any) => {
   }
   return 8
 }
+
+export default marginCalculator;

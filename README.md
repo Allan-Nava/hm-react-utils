@@ -1,17 +1,13 @@
 # Hiway Media React Utils
-[![Publish Package to npmjs](https://github.com/Allan-Nava/hm-react-utils/actions/workflows/npm.yml/badge.svg)](https://github.com/Allan-Nava/hm-react-utils/actions/workflows/npm.yml)
-[![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/Allan-Nava/hm-react-utils/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/Allan-Nava/hm-react-utils/actions/workflows/jekyll-gh-pages.yml)
-
-## About the project 
-
-Hiway Media react utils contains :
+Library that contains react fuctions.
 
 - hooks
-- kafka
 - models
 - utils functions
 
+## To include this library
 
-### Documentation
+Go on packege.json and include in dependencies:
 
-Please see the documentation [here](https://allan-nava.github.io/hm-react-utils/) 
+"hm-react-utils": "git+https://gitlab.ies-italia.it/hiway/library/hm-react-utils.git#master"
+

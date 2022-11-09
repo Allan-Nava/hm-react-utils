@@ -1,4 +1,4 @@
-export interface WidgetProps {
+export type WidgetProps = {
     body: any;
     data: any;
     children:boolean;
@@ -6,3 +6,5 @@ export interface WidgetProps {
     entity_type: any;
     style: string;
 }
+
+export default WidgetProps;

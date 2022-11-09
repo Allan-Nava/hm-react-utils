@@ -1,25 +1,27 @@
 {
   "compilerOptions": {
     // Default
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"], 
-    "allowJs": true,
+    "target": "es5", 
+    "lib": ["dom", "dom.iterable", "esnext"],
     "esModuleInterop": true, 
     "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "strict": false, 
+    "skipLibCheck": true,
+
     // Added
     "jsx": "preserve", 
-    "module": "commonjs",  
+    "allowJs": true,
     "declaration": true,
+    "declarationDir": "./dist/types",
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "dist",
+    "module": "esnext",  
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true,
-    "strict": false
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["./lib/**/*"],
-  "exclude": [
-    "dist",
-    "node_modules",
-  ],
+  "include": ["lib"],
+  "exclude": ["node_modules", "dist", "example", "rollup.config.js"]
 }

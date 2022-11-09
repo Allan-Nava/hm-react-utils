@@ -1,8 +1,8 @@
 import { useRef, useCallback } from "react";
 
-const useInfiniteScroll = (callback, isFetching) => {
+export const useInfiniteScroll = (callback, isFetching) => {
   //here we use useRef to store a DOM node and the returned object will persist regardless of re-renders
-  const observer = useRef();
+  const observer = useRef<IntersectionObserver | null>(null);
 
   //useCallback takes a callback argument and an array dependency list and returns a memoized callback
   //which is guaranteed to have the same reference

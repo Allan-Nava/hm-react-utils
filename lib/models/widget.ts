@@ -5,3 +5,5 @@ export type Widget = {
     body: Widget[]
     data: any
 }
+
+export default Widget;
