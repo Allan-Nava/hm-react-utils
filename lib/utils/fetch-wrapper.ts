@@ -4,10 +4,9 @@ export const fetchWrapper = {
 
 async function ajax(method, url, headers, params, options) {
     const base_header = new Headers(headers);
-    base_header.append("Content-Type", "application/json");
 
-    if (process.env.NODE_ENV != "production") {
-        base_header.append("x-debug", "SuyPBUZPau1F4Jd")
+    if (!headers["Content-Type"]) {
+        base_header.append("Content-Type", "application/json");
     }
 
     let requestOptions = <any>{
@@ -17,9 +16,13 @@ async function ajax(method, url, headers, params, options) {
 
     if (params) {
         if (method == 'GET') {
-            url += '?'+ new URLSearchParams(params)
+            url += '?' + new URLSearchParams(params)
         } else {
-            requestOptions.body = JSON.stringify(params)
+            if (headers["Content-Type"] && headers["Content-Type"] == "application/x-www-form-urlencoded") {
+                requestOptions.body = new URLSearchParams(params)
+            } else {
+                requestOptions.body = JSON.stringify(params)
+            }
         }
     }
 
@@ -29,11 +32,12 @@ async function ajax(method, url, headers, params, options) {
             requestOptions.headers = { ...requestOptions.headers, ...headers }
         }
     }
-    const response = await fetch(url, requestOptions);
-    return response
-}
 
-async function handleResponse(response) {
-    const json = await response.json()
-    return json
+    try {
+        const response = await fetch(url, requestOptions)
+        return response
+    } catch (err) {
+        let r = new Response(JSON.stringify({error: err.message}), { status: 500, headers: new Headers({"Content-Type": "application/json"}) })
+        return r
+    }
 }
